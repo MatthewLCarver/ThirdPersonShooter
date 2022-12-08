@@ -2800,7 +2800,7 @@ MonoBehaviour:
   stats:
     maxHealth: 10
     speed: 5
-    range: 15
+    range: 50
     damage: 1
     attackRate: 0.25
   pauseAction: {fileID: 3499753283859219083, guid: ee815b6ae996cdc4b86a6327d6dba58f, type: 3}

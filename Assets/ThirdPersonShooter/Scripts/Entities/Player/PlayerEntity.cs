@@ -12,6 +12,8 @@ namespace ThirdPersonShooter.Entities.Player
 	{
 		public ref Stats Stats => ref stats;
 		public Vector3 Position => transform.position;
+
+		public Action<int> onScoreUpdated;
 		
 		[SerializeField] private Stats stats;
 		[SerializeField] private InputActionReference pauseAction;
@@ -21,6 +23,14 @@ namespace ThirdPersonShooter.Entities.Player
 		[SerializeField] private Weapon weapon;
 		[SerializeField] private AudioSource hurtSource;
 		[SerializeField] private AudioSource deathSource;
+		
+		private int score;
+		
+		public void AddScore(int _value)
+		{
+			score += _value;
+			onScoreUpdated?.Invoke(score);
+		}
 		
 		private void Awake()
 		{

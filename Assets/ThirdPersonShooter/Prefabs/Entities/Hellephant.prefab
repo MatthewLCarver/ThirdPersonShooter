@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sinkTime: 1
-  sinkAmount: 1
+  sinkAmount: 2
   parent: {fileID: 2224013992605129636}
 --- !u!1 &502528690813158255
 GameObject:
